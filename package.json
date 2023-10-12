@@ -1,0 +1,28 @@
+{
+  "name": "todo-list-vanilla",
+  "version": "1.0.0",
+  "description": "To-do List App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amsandiego/todo-list-vanilla.git"
+  },
+  "author": "Annie San Diego",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amsandiego/todo-list-vanilla/issues"
+  },
+  "homepage": "https://github.com/amsandiego/todo-list-vanilla#readme",
+  "dependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
+}

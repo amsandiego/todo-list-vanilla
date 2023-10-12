@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* COLORS PALETTE */
+:root {
+  --dark-purple: #27296d;
+  --purple: #5e63b6;
+  --lavender: #a393eb;
+  --light-purple: #f5c7f7;
+  --light-grey: #f7f7f7;
+  --dark-grey: #757575;
+  --white: #ffffff;
+  --green: #61b874;
+  --yellow: #e6db7b;
+  --red: #e67b7b;
+  --dark-red: #c46161;
+}
+
+body {
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}

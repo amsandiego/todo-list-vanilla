@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="images" href="to-do-list.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3be90f9ee6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>To Do</title>
+  </head>
+  <body id="body">
+    <header id="header">
+      <i class="fa-solid fa-bars"></i>
+      <h1 class="title">To Do</h1>
+    </header>
+
+    <nav id="side-menu">
+      <!-- CALENDAR LINKS-->
+      <div class="menu-links">
+        <a href="#" class="" data-link-index="0" data-title="all">
+          <i
+            class="fa-regular fa-calendar-days"
+            data-icon="fa-calendar-days"
+          ></i>
+          <p class="menu-link-text">All</p>
+        </a>
+        <a href="#" class="" data-link-index="1" data-title="today">
+          <i class="fa-solid fa-calendar-day" data-icon="fa-calendar-day"></i>
+          <p class="menu-link-text">Today</p>
+        </a>
+        <a href="#" class="" data-link-index="2" data-title="week">
+          <i class="fa-solid fa-calendar-week" data-icon="fa-calendar-week"></i>
+          <p class="menu-link-text">Week</p>
+        </a>
+        <a href="#" class="" data-link-index="3" data-title="important">
+          <i
+            class="fa-regular fa-calendar-plus"
+            data-icon="fa-calendar-plus"
+          ></i>
+          <p class="menu-link-text">Important</p>
+        </a>
+        <a href="#" class="" data-link-index="4" data-title="completed">
+          <i
+            class="fa-regular fa-calendar-check"
+            data-icon="fa-calendar-check"
+          ></i>
+          <p class="menu-link-text">Completed</p>
+        </a>
+      </div>
+
+      <!-- PROJECTS -->
+      <div id="projects">
+        <div class="projects-title">
+          <p>Projects (<span class="projects-count"></span></p>
+          <i class="fa-solid fa-circle-plus">
+            <span class="add-project">Add New Project</span>
+          </i>
+        </div>
+        <div class="projects-links">
+          <!-- Project list here-->
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer id="footer">
+        <p>© Annie San Diego</p>
+        <a
+          href="https://github.com/amsandiego/todo-list-vanilla"
+          target="_blank"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </footer>
+    </nav>
+
+    <main id="main">
+      <!-- TITLE -->
+      <div class="main-title">
+        <i class="main-title-icon"> </i>
+        <h1 class="main-title-text"></h1>
+      </div>
+
+      <!-- TASKS -->
+      <div class="tasks">
+        <div class="tasks-title">
+          <p>Tasks (<span class="tasks-count"></span></p>
+        </div>
+        <i class="fa-solid fa-circle-plus">
+          <span class="add-project">Add New Task</span>
+        </i>
+      </div>
+
+      <!-- TASKS LIST -->
+      <div class="tasks-list">
+        <!-- Tasks here-->
+      </div>
+    </main>
+
+    <section class="modal"></section>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
