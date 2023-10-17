@@ -17,7 +17,9 @@
   </head>
   <body id="body">
     <header id="header">
-      <i class="fa-solid fa-bars"></i>
+      <div class="toggle-menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <h1 class="title">To Do</h1>
     </header>
 
@@ -103,7 +105,116 @@
       </div>
     </main>
 
-    <section class="modal"></section>
+    <!-- MODAL -->
+    <section id="modal">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2 class="modal-main-title"></h2>
+          <i class="fa-solid fa-xmark close-modal close"></i>
+        </div>
+        <div class="modal-content">
+          <!-- DELETE PROJECT -->
+          <p class="project-deletion-text hide">
+            Are you sure? <br /><br />
+            Project <span class="project-deletion-title"></span> will be deleted
+            permanently.
+          </p>
+
+          <!-- DELETE TASK -->
+          <p class="task-deletion-text hide">
+            Are you sure? <br /><br />
+            Task <span class="task-deletion-title"></span> will be deleted
+            permanently.
+          </p>
+
+          <!-- TASK INFO -->
+          <div class="info-div hide">
+            <div class="task-title">
+              <p class="info-title padding-right">Title:</p>
+              <p class="info-task-title"></p>
+            </div>
+
+            <div class="task-description">
+              <p class="info-description padding-right">Title:</p>
+              <p class="info-task-description"></p>
+            </div>
+
+            <div class="task-due-date">
+              <p class="info-due-date padding-right">Title:</p>
+              <p class="info-task-due-date"></p>
+            </div>
+
+            <div class="task-priority">
+              <p class="info-priority padding-right">Title:</p>
+              <p class="info-task-priority"></p>
+            </div>
+
+            <div class="task-project">
+              <p class="info-project padding-right">Title:</p>
+              <p class="info-task-project"></p>
+            </div>
+          </div>
+
+          <form id="form" name="form" method="POST">
+            <!-- MODAL TITLE INPUT -->
+            <div>
+              <label id="modal-title-label" for="modal-title"
+                >Title<span class="title-star">*</span></label
+              >
+              <input
+                type="text"
+                id="modal-title"
+                name="modal-title"
+                autocomplete="off"
+              />
+              <p class="modal-title-error hide">Please fill out this field.</p>
+            </div>
+
+            <!-- MODAL CONTENT FOR TASK -->
+            <div class="modal-tasks-div hide">
+              <!-- TASK DESCRIPTION -->
+              <div class="task-description-area">
+                <label for="task-description">Description</label>
+                <textarea
+                  class="task-description"
+                  rows="3"
+                  cols="36"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- TASK DUE DATE -->
+            <div class="task-due-date">
+              <label for="dueDate">Due Date</label>
+              <input type="date" id="dueDate" name="dueDate" />
+            </div>
+
+            <!-- TASK PRIORITY -->
+            <div>
+              <label for="priority">Priority</label>
+              <select class="task-priority" name="priority">
+                <option value="" disabled selected>
+                  How important is this task?
+                </option>
+                <option value="low">Low 🟡</option>
+                <option value="medium">Medium 🟢</option>
+                <option value="high">High 🔴</option>
+              </select>
+            </div>
+          </form>
+
+          <!-- MODAL BUTTONS -->
+          <div class="modal-buttons">
+            <button type="button" class="cancel-modal close">Cancel</button>
+            <button
+              type="button"
+              class="modal-task-button confirm-modal"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
