@@ -28,29 +28,35 @@
       <div class="menu-links">
         <a href="#" class="" data-link-index="0" data-title="all">
           <i
-            class="fa-regular fa-calendar-days"
+            class="fa-regular fa-calendar-days menu-link-icon select padding-right"
             data-icon="fa-calendar-days"
           ></i>
           <p class="menu-link-text">All</p>
         </a>
         <a href="#" class="" data-link-index="1" data-title="today">
-          <i class="fa-solid fa-calendar-day" data-icon="fa-calendar-day"></i>
+          <i
+            class="fa-solid fa-calendar-day menu-link-icon select padding-right"
+            data-icon="fa-calendar-day"
+          ></i>
           <p class="menu-link-text">Today</p>
         </a>
         <a href="#" class="" data-link-index="2" data-title="week">
-          <i class="fa-solid fa-calendar-week" data-icon="fa-calendar-week"></i>
+          <i
+            class="fa-solid fa-calendar-week menu-link-icon select padding-right"
+            data-icon="fa-calendar-week"
+          ></i>
           <p class="menu-link-text">Week</p>
         </a>
         <a href="#" class="" data-link-index="3" data-title="important">
           <i
-            class="fa-regular fa-calendar-plus"
+            class="fa-regular fa-calendar-plus menu-link-icon select padding-right"
             data-icon="fa-calendar-plus"
           ></i>
           <p class="menu-link-text">Important</p>
         </a>
         <a href="#" class="" data-link-index="4" data-title="completed">
           <i
-            class="fa-regular fa-calendar-check"
+            class="fa-regular fa-calendar-check menu-link-icon select padding-right"
             data-icon="fa-calendar-check"
           ></i>
           <p class="menu-link-text">Completed</p>
@@ -65,7 +71,7 @@
             <span class="add-project">Add New Project</span>
           </i>
         </div>
-        <div class="projects-links">
+        <div class="project-links">
           <!-- Project list here-->
         </div>
       </div>
@@ -85,7 +91,7 @@
     <main id="main">
       <!-- TITLE -->
       <div class="main-title">
-        <i class="main-title-icon"> </i>
+        <i class="main-title-icon"></i>
         <h1 class="main-title-text"></h1>
       </div>
 
@@ -135,22 +141,22 @@
             </div>
 
             <div class="task-description">
-              <p class="info-description padding-right">Title:</p>
+              <p class="info-description padding-right">Description:</p>
               <p class="info-task-description"></p>
             </div>
 
             <div class="task-due-date">
-              <p class="info-due-date padding-right">Title:</p>
+              <p class="info-due-date padding-right">Due date:</p>
               <p class="info-task-due-date"></p>
             </div>
 
             <div class="task-priority">
-              <p class="info-priority padding-right">Title:</p>
+              <p class="info-priority padding-right">Priority:</p>
               <p class="info-task-priority"></p>
             </div>
 
             <div class="task-project">
-              <p class="info-project padding-right">Title:</p>
+              <p class="info-project padding-right">Project:</p>
               <p class="info-task-project"></p>
             </div>
           </div>
@@ -196,8 +202,8 @@
                 <option value="" disabled selected>
                   How important is this task?
                 </option>
-                <option value="low">Low 🟡</option>
-                <option value="medium">Medium 🟢</option>
+                <option value="low">Low 🟢</option>
+                <option value="medium">Medium 🟡</option>
                 <option value="high">High 🔴</option>
               </select>
             </div>
