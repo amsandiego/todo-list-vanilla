@@ -19,6 +19,7 @@
   "homepage": "https://github.com/amsandiego/todo-list-vanilla#readme",
   "dependencies": {
     "css-loader": "^6.8.1",
+    "date-fns": "^2.30.0",
     "style-loader": "^3.3.3",
     "webpack": "^5.88.2"
   },
