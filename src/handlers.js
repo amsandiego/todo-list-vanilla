@@ -76,7 +76,7 @@ const handlers = (() => {
           );
 
           // Show task info
-        } else if (target.classList.contains('fa-info-circle')) {
+        } else if (target.classList.contains('fa-circle-info')) {
           dom.manipulateModal('show', 'Task Info', '', projectIndex, taskIndex);
         }
       }
@@ -140,7 +140,6 @@ const handlers = (() => {
       ) {
         projectIndex = parseInt(target.getAttribute('data-project-index'), 10);
         taskIndex = parseInt(target.getAttribute('data-task-index'), 10);
-        console.log(selectedLink);
         tasks.toggleTaskCompletion(projectIndex, taskIndex, selectedLink);
       }
     });
