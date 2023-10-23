@@ -89,7 +89,7 @@ const dom = (() => {
     // Title of tasks from projects
     if (
       target.classList.contains('project-link') ||
-      target.classList.contains('project-text') ||
+      target.classList.contains('project-title') ||
       target.classList.contains('delete-project') ||
       target.classList.contains('edit-project') ||
       target.classList.contains('project-icon-and-text-div') ||
@@ -146,14 +146,14 @@ const dom = (() => {
     modalAction,
     projectIndex
   ) => {
-    const modalHeader = modal.querySelector('.modal-hedaer');
+    const modalHeader = modal.querySelector('.modal-header');
     const modalMainTitle = modal.querySelector('.modal-main-title');
     const modalTaskButton = modal.querySelector('.modal-task-button');
     const projectDeletionText = modal.querySelector('.project-deletion-text');
     const taskDeletionText = modal.querySelector('.task-deletion-text');
     const taskInfoDiv = modal.querySelector('.info-div');
     const confirmButton = modal.querySelector('.confirm-modal');
-    const cancelButton = modal.querySelector('.cancel -modal');
+    const cancelButton = modal.querySelector('.cancel-modal');
 
     modalHeader.classList.remove('deletion-modal-header');
     form.reset();
@@ -265,7 +265,7 @@ const dom = (() => {
 
           // FILTER OUT TASKS NOT FOR TODAY
         } else if (menuTitle === 'today') {
-          if (projects.projectsList[i].tasks[j].date !== today) {
+          if (projects.projectList[i].tasks[j].date !== today) {
             continue;
           }
 
@@ -301,11 +301,11 @@ const dom = (() => {
         taskDiv.setAttribute('data-project-index', i);
         taskDiv.setAttribute('data-task-index', j);
 
-        if (projects.projectsList[i].tasks[j].priority === 'low') {
+        if (projects.projectList[i].tasks[j].priority === 'low') {
           taskIcon.classList.add('low-priority');
-        } else if (projects.projectsList[i].tasks[j].priority === 'medium') {
+        } else if (projects.projectList[i].tasks[j].priority === 'medium') {
           taskIcon.classList.add('mid-priority');
-        } else if (projects.projectsList[i].tasks[j].priority === 'high') {
+        } else if (projects.projectList[i].tasks[j].priority === 'high') {
           taskIcon.classList.add('high-priority');
         } else {
           taskIcon.classList.add('fal', 'padding-right');
@@ -314,7 +314,7 @@ const dom = (() => {
         taskIcon.setAttribute('data-task-index', j);
 
         taskText.classList.add('task-text');
-        taskText.textContent = projects.projectsList[i].tasks[j].title;
+        taskText.textContent = projects.projectList[i].tasks[j].title;
         taskText.setAttribute('data-project-index', i);
         taskText.setAttribute('data-task-index', j);
 
@@ -323,8 +323,8 @@ const dom = (() => {
 
         // TASKS DUE DATE
         taskDate.classList.add('due-date', 'padding-right');
-        if (projects.projectsList[i].tasks[j].date !== undefined) {
-          taskDate.textContent = projects.projectsList[i].tasks[j].date;
+        if (projects.projectList[i].tasks[j].date !== undefined) {
+          taskDate.textContent = projects.projectList[i].tasks[j].date;
         } else {
           taskDate.textContent = '';
         }
@@ -375,7 +375,7 @@ const dom = (() => {
         tasksList.appendChild(taskDiv);
 
         // TASK COMPLETION
-        if (projects.projectsList[i].tasks[j].completed === false) {
+        if (projects.projectList[i].tasks[j].completed === false) {
           taskText.classList.remove('task-done-text');
           taskIcon.classList.add('fa-regular', 'fa-circle', 'padding-right');
         } else {
@@ -452,7 +452,7 @@ const dom = (() => {
       // IF CLICKED ON PROJECT ICON OR TEXT OR EDIT/DELETE ICONS
       if (
         target.classList.contains('project-icon') ||
-        target.classList.contains('project-text') ||
+        target.classList.contains('project-title') ||
         target.classList.contains('edit-project') ||
         target.classList.contains('delete-project')
       ) {

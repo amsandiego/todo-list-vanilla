@@ -60,6 +60,7 @@ const tasks = (() => {
 
   const toggleTaskCompletion = (projectIndex, taskIndex, selectedLink) => {
     let clickedLink;
+    console.log(selectedLink);
     projects.projectList[projectIndex].tasks[taskIndex].completed =
       !projects.projectList[projectIndex].tasks[taskIndex].completed;
 
