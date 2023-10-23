@@ -174,3 +174,26 @@ select:focus {
   border: 1px solid var(--lavender);
   transition: 0.3s;
 }
+
+/* PROJECTS */
+.projects-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0 20px 0;
+  padding: 0 20px 10px 20px;
+  width: 260px;
+  font-size: 18px;
+  border-bottom: 1px solid var(--dark-grey);
+}
+
+.project-text,
+.task-text {
+  white-space: nowrap;
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-link {
+  justify-content: space-between;
+}
