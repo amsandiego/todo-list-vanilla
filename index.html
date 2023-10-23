@@ -127,9 +127,9 @@
         <div class="tasks-title">
           <p>Tasks (<span class="tasks-count"></span>)</p>
           <i
-            class="fa-solid fa-circle-plus add-task task-icon hover-element tooltip-icon hide"
+            class="fa-solid fa-circle-plus add-task task-icon hover-element tooltip-icon"
           >
-            <span class="add-project">Add New Task</span>
+            <span class="add-task tooltip-text">Add New Task</span>
           </i>
         </div>
 
@@ -164,27 +164,27 @@
 
           <!-- TASK INFO -->
           <div class="info-div hide">
-            <div class="task-title">
+            <div class="task-title-div">
               <p class="info-title padding-right">Title:</p>
               <p class="info-task-title"></p>
             </div>
 
-            <div class="task-description">
+            <div class="task-description-div">
               <p class="info-description padding-right">Description:</p>
               <p class="info-task-description"></p>
             </div>
 
-            <div class="task-due-date">
+            <div class="task-due-date-div">
               <p class="info-due-date padding-right">Due date:</p>
               <p class="info-task-due-date"></p>
             </div>
 
-            <div class="task-priority">
+            <div class="task-priority-div">
               <p class="info-priority padding-right">Priority:</p>
               <p class="info-task-priority"></p>
             </div>
 
-            <div class="task-project">
+            <div class="task-project-div">
               <p class="info-project padding-right">Project:</p>
               <p class="info-task-project"></p>
             </div>
@@ -216,25 +216,25 @@
                   cols="36"
                 ></textarea>
               </div>
-            </div>
 
-            <!-- TASK DUE DATE -->
-            <div class="task-due-date">
-              <label for="dueDate">Due Date</label>
-              <input type="date" id="dueDate" name="dueDate" />
-            </div>
+              <!-- TASK DUE DATE -->
+              <div class="task-due-date">
+                <label for="dueDate">Due Date</label>
+                <input type="date" id="dueDate" name="dueDate" />
+              </div>
 
-            <!-- TASK PRIORITY -->
-            <div>
-              <label for="priority">Priority</label>
-              <select class="task-priority" name="priority">
-                <option value="" disabled selected>
-                  How important is this task?
-                </option>
-                <option value="low">Low 🟢</option>
-                <option value="medium">Medium 🟡</option>
-                <option value="high">High 🔴</option>
-              </select>
+              <!-- TASK PRIORITY -->
+              <div>
+                <label for="priority">Priority</label>
+                <select class="task-priority" name="priority">
+                  <option value="" disabled selected>
+                    How important is this task?
+                  </option>
+                  <option value="low">Low 🟢</option>
+                  <option value="medium">Medium 🟡</option>
+                  <option value="high">High 🔴</option>
+                </select>
+              </div>
             </div>
           </form>
 
