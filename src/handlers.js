@@ -13,6 +13,7 @@ const handlers = (() => {
 
     document.addEventListener('click', (event) => {
       const { target } = event;
+      console.log(target);
       const modalMainTitle = document.querySelector('.modal-main-title');
       const selectedLink = document.querySelector('.selected-link');
       const linkIndex = parseInt(target.getAttribute('data-link-index'), 10);
