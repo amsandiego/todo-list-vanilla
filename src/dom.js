@@ -408,8 +408,8 @@ const dom = (() => {
 
     // IF CLICKED ON PROJECT LINK
     if (menuTitle === 'project') {
-      projectIndexStart = projectIndex;
-      projectIndexEnd = projectIndex + 1;
+      projectIndexStart = +projectIndex;
+      projectIndexEnd = +projectIndex + 1;
 
       // IF PROJECT DOESN'T HAVE ANY TASKS
       if (projects.projectList[projectIndex].tasks.length === 0) {
